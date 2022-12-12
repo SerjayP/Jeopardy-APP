@@ -1,0 +1,134 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: #031478;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 20% 60% 20%;
+  grid-gap: 1px;
+  background-color: black;
+
+}
+
+.Category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: #031478;
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 100px;
+  color: white;
+
+}
+
+.Points {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #031478;
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.Question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  border: solid black;
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  color: #FBB540;
+  text-align: center;
+}
+
+.QA {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  background-color: #031478;
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+.Increment {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  background-color: #031478;
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.Decrement {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 3/4;
+  grid-row: 3/4;
+  background-color: #031478;
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.Reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 3/4;
+  grid-row: 1/2;
+  background-color: #031478;
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  color: white;
+
+}
+
+.Left {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: #031478;
+}
+
+.Left {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  background-color: #031478;
+}
