@@ -23,8 +23,8 @@ function App() {
     try{
     const response = await fetch(url)
     const data = await response.json();
-    setJeopardy(data)
-    // console.log(data)
+    setJeopardy(data[0])
+    
   }
   catch (err) {
     console.err(err)
@@ -32,12 +32,14 @@ function App() {
 }
   useEffect(() => { getJeopardy() }, [])
 
+ 
+
   return (
     <div className="App">
-      <QA />
-      <Header />
+      <QA jeopardy={jeopardy}/>
+      <Header jeopardy={jeopardy}/>
       <Points />
-      <Score />
+      <Score jeopardy={jeopardy}/>
       <Question jeopardy={jeopardy}/>
       <Reset />
       <Left />

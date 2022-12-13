@@ -1,19 +1,33 @@
+
 import { useState } from "react"
 
-export default function Score() {
-    const [score, setScore] = useState(100);
+export default function Score({ jeopardy }) {
+    const [score, setScore] = useState(0);
     const handleIncrement = () => {
-        setScore(score + 100)
+        setScore(score + jeopardy.value)
     }
 
     const handleDecrement = () => {
-        setScore(score - 100)
+        setScore(score - jeopardy.value)
     }
 
-    return (
-        <>
-            <button className="Increment" onClick={handleIncrement}>INCREMENT</button>
-            <button className="Decrement" onClick={handleDecrement}>DECREMENT</button>
-        </>
-    )
+
+    const displayed = () => {
+        return (
+            <>
+                <button className="Increment" onClick={handleIncrement}>
+                    Increment <br></br>
+                </button>
+                <button className="Decrement" onClick={handleDecrement}>
+                    Decrement<br></br>
+                </button>
+                <button className="Points">{score}</button>
+            </>
+        )
+    }
+    const notDisplayed = () => {
+        return <h1></h1>
+    }
+
+    return jeopardy ? displayed() : notDisplayed()
 }

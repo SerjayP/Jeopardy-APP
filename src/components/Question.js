@@ -1,5 +1,4 @@
 
-
 export default function Question({ jeopardy }) {
 
     console.log(jeopardy)
@@ -7,15 +6,17 @@ export default function Question({ jeopardy }) {
         return (
             <>
                 <div className="Question" alt="Question">
-                    <p>{jeopardy.category}</p>
+                    <p>{jeopardy.question}</p>
+                   
                 </div>
             </>
 
         )
     }
     const notDisplayed = () => {
-        return <h1>Not Displayed</h1>
+        return <h1></h1>
     }
 
     return jeopardy ? displayed() : notDisplayed()
 }
+
