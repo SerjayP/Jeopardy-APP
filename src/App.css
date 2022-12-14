@@ -3,4 +3,9 @@
   padding: 0px;
   background-color: #3d5f73;
 }
-
+button {
+  padding: 10px;
+}
+.Category {
+  text-transform:uppercase;
+}
