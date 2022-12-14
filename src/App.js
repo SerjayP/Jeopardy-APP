@@ -7,8 +7,6 @@ import Header from './components/Header';
 import Score from './components/Score';
 import Question from './components/Question';
 import Points from './components/Points';
-import Reset from './components/Reset';
-import Left from './components/Left';
 import Right from './components/Right';
 
 function App() {
@@ -41,8 +39,6 @@ function App() {
       <Points />
       <Score jeopardy={jeopardy}/>
       <Question jeopardy={jeopardy}/>
-      <Reset />
-      <Left />
       <Right />
     </div>
   );

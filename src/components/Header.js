@@ -14,7 +14,7 @@ export default function Header({ jeopardy }) {
         )
     }
     const notDisplayed = () => {
-        return <h1></h1>
+        return <h1>Failed to load!</h1>
     }
 
     return jeopardy ? displayed() : notDisplayed()
